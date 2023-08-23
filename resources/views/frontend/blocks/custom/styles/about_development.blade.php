@@ -14,7 +14,7 @@
         return $item->parent_id == $block->id;
     });
   @endphp
-  <div class="section m-0" style="">
+  <div class="section m-0">
     <div class="container">
       <div class="row">
         <div class="col-md-5">
@@ -27,54 +27,120 @@
             {{ $brief }}
           </p>
         </div>
-        <div class="col-md-6 offset-0 offset-md-1 mt-5 mt-md-0 d-flex justify-content-center">
+        <div
+          class="col-md-6 offset-0 offset-md-1 mt-5 mt-md-0 d-flex justify-content-center"
+        >
           <div class="circle-border">
             <div class="feature-content">
-              <div class="d-flex align-items-center justify-content-between h-100">
+              <div
+                class="d-flex align-items-center justify-content-between h-100"
+              >
                 <div>
-                  <div class="circle-inner">
+                  <div
+                    class="circle-inner"
+                    style="transform: translateY(70%)"
+                  >
                     <div>
-                      <div class="counter mb-0 fw-normal font-body text-primary">
-                        <span class="font-body" data-from="1" data-to="8" data-refresh-interval="10"
-                          data-speed="2000">{{ $web_information->information->year ?? '' }}</span>+
+                      <div
+                        class="counter mb-0 fw-normal font-body text-primary"
+                      >
+                        <span
+                          class="font-body"
+                          data-from="1"
+                          data-to="{{ $web_information->information->project ?? '' }}"
+                          data-refresh-interval="10"
+                          data-speed="2000"
+                          >{{ $web_information->information->project ?? '' }}</span
+                        >+
                       </div>
-                      <h5 class="mt-2 text-muted font-body ls0">@lang('năm')</h5>
+                      <h5 class="mt-2 text-muted font-body ls0">@lang('Dự án')</h5>
                     </div>
                   </div>
                 </div>
-                <div class="d-flex h-100 flex-column justify-content-between">
+                <div
+                  class="d-flex h-100 flex-column justify-content-between"
+                >
                   <div class="circle-inner">
                     <div>
-                      <div class="counter mb-0 fw-normal font-body text-info">
-                        <span class="font-body" data-from="1" data-to="50" data-refresh-interval="200"
-                          data-speed="23000">{{ $web_information->information->project ?? '' }}</span>+
-                      </div>
-                      <h5 class="mt-2 text-muted font-body ls0">
-                        @lang('Dự án')
-                      </h5>
-                    </div>
-                  </div>
-                  <div class="circle-inner">
-                    <div>
-                      <div class="counter mb-0 fw-normal font-body text-warning">
-                        <span class="font-body" data-from="1" data-to="100" data-refresh-interval="100"
-                          data-speed="2400">{{ $web_information->information->adviser ?? '' }}</span>+
+                      <div
+                        class="counter mb-0 fw-normal font-body text-info"
+                      >
+                        <span
+                          class="font-body"
+                          data-from="1"
+                          data-to="{{ $web_information->information->adviser ?? '' }}"
+                          data-refresh-interval="200"
+                          data-speed="23000"
+                          >{{ $web_information->information->adviser ?? '' }}</span
+                        >+
                       </div>
                       <h5 class="mt-2 text-muted font-body ls0">
                         @lang('Cố vấn')
                       </h5>
                     </div>
                   </div>
-                </div>
-                <div>
                   <div class="circle-inner">
                     <div>
-                      <div class="counter mb-0 fw-normal font-body color">
-                        <span class="font-body" data-from="1" data-to="30" data-refresh-interval="100"
-                          data-speed="2400">{{ $web_information->information->professer ?? '' }}</span>+
+                      <div
+                        class="counter mb-0 fw-normal font-body text-warning"
+                      >
+                        <span
+                          class="font-body"
+                          data-from="1"
+                          data-to="{{ $web_information->information->year ?? '' }}"
+                          data-refresh-interval="100"
+                          data-speed="2400"
+                          >{{ $web_information->information->year ?? '' }}</span
+                        >+
                       </div>
                       <h5 class="mt-2 text-muted font-body ls0">
-                        @lang('chuyên gia')
+                        @lang('năm')
+                      </h5>
+                    </div>
+                  </div>
+                  <div
+                    class="circle-inner"
+                    style="opacity: 0; user-select: none"
+                  >
+                    <div>
+                      <div
+                        class="counter mb-0 fw-normal font-body text-warning"
+                      >
+                        <span
+                          class="font-body"
+                          data-from="1"
+                          data-to="100"
+                          data-refresh-interval="100"
+                          data-speed="2400"
+                          >100</span
+                        >+
+                      </div>
+                      <h5 class="mt-2 text-muted font-body ls0">
+                        Cố vấn
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div
+                    class="circle-inner"
+                    style="transform: translateY(70%)"
+                  >
+                    <div>
+                      <div
+                        class="counter mb-0 fw-normal font-body color"
+                      >
+                        <span
+                          class="font-body"
+                          data-from="1"
+                          data-to="{{ $web_information->information->professer ?? '' }}"
+                          data-refresh-interval="100"
+                          data-speed="2400"
+                          >{{ $web_information->information->professer ?? '' }}</span
+                        >+
+                      </div>
+                      <h5 class="mt-2 text-muted font-body ls0">
+                        @lang('năm')
                       </h5>
                     </div>
                   </div>

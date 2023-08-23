@@ -6,7 +6,8 @@
         return $item->parent_id == $block->id;
     });
   @endphp
-  <div class="section border-top-0 mb-0">
+
+  <div class="section border-top-0 mb-0 mt-0">
     <div class="container text-center">
       <div class="heading-block center">
         <h2>{{ $title }}</h2>

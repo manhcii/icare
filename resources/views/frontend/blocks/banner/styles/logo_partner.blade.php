@@ -16,7 +16,7 @@
       <div id="oc-clients"
         class="owl-carousel image-carousel carousel-widget owl-loaded owl-drag with-carousel-dots"
         data-margin="20" data-nav="false" data-pagi="true" data-items-xs="2" data-items-sm="3" data-items-md="4"
-        data-items-lg="5" data-items-xl="6">
+        data-items-lg="5" data-items-xl="4">
         <div class="owl-stage-outer">
           <div class="owl-stage" style="
                 transform: translate3d(0px, 0px, 0px);
