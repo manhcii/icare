@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Alatsi&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
+:root {
+  --section-about-bg: url(https://websitedemos.net/diagnostics-lab-02/wp-content/uploads/sites/662/2020/08/diagnostic-lab-hero-bg.jpg);
+}
+.section-about::before {
+  background-size: 30%;
+  z-index: 0;
+}
+
+body,
+small,
+.menu-link,
+.sub-menu-container .menu-item > .menu-link,
+.wp-caption,
+.fbox-center.fbox-italic p,
+.skills li .progress-percent .counter,
+.nav-tree ul ul a,
+.font-body,
+.entry-link span,
+.entry blockquote p,
+.more-link,
+.comment-content .comment-author span,
+.comment-content .comment-author span a,
+.button.button-desc span,
+.testi-content p,
+.team-title span,
+.before-heading,
+.wedding-head .first-name span,
+.wedding-head .last-name span,
+.font-secondary,
+.menu-link {
+  font-family: "Raleway", sans-serif !important;
+  font-size: 14px !important;
+}
+
+.font-body {
+  font-size: 14px !important;
+  font-weight: 600 !important;
+}
+
+#content p {
+  margin-bottom: 0;
+  font-size: 16px;
+}
+
+#logo img {
+  padding: 0.5vw 0;
+}
+
+.heading-block::after {
+  border-top: 2px solid #3ab2b8ff !important;
+  border-color: #3ab2b8ff;
+}
+
+.fbox-icon i,
+.fbox-icon img {
+  background-color: rgb(58, 178, 184) !important;
+}
+
+.section-clients {
+  background-color: #fff !important;
+}
+
+.section {
+  background-color: rgba(58, 178, 184, 0.2);
+}
+
+h2,
+.fbox-content h3,
+.heading-block h2 {
+  font-family: "Raleway", sans-serif !important;
+  font-weight: bold;
+}
+
+.heading-block h2 {
+  font-weight: bold !important;
+  text-transform: uppercase !important;
+}
+
+.counter + h5 {
+  font-weight: bold !important;
+  margin-bottom: 0;
+  font-size: 14px !important;
+}
+
+.counter .font-body {
+  font-size: 20px !important;
+  font-weight: bold !important;
+}
+
+.section-about::before {
+  transform: rotate(0);
+}
+
+.btn-primary {
+  background-color: #3ab2b8ff !important;
+  border-color: #3ab2b8ff !important;
+}
+
+.dark .owl-carousel .owl-dots .owl-dot,
+.owl-carousel .owl-dots .owl-dot,
+body:not(.dark) #copyrights {
+  background-color: #3ab2b8ff !important;
+}
+
+#copyrights,
+.dark .copyright-links a,
+.dark #copyrights,
+#copyrights.dark,
+.dark #footer .social-icon.si-borderless,
+#footer.dark .social-icon.si-borderless {
+  color: #fff !important;
+}
+
+#banner .banner-button {
+  padding: 15px 20px;
+  border-radius: 3px;
+  background: #3ab2b8ff;
+  min-width: 200px;
+  width: fit-content;
+  display: block;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-left: auto;
+}
+
+#banner .banner-image {
+  background-image: url("https://images.unsplash.com/photo-1516826049371-1e7856387270?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 100px 0 150px;
+}
+
+#banner .banner-image .banner-image-text {
+  font-size: 200px;
+  color: #fff;
+  line-height: 0.65;
+}
+
+#banner .banner-content-title {
+  margin-top: -5px;
+}
+
+#banner .banner-content-counter {
+  margin-left: auto;
+  width: fit-content;
+  font-family: "Raleway", sans-serif !important;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: -5px;
+}
+
+#banner .banner-content-description {
+  font-size: 16px;
+}
+
+.card-text {
+  margin-bottom: 20px !important;
+}
+
+@media (max-width: 991px) {
+  #banner .banner-content-title {
+    font-size: 20px;
+    margin-top: -2px;
+  }
+}
+
+@media (max-width: 767px) {
+  #banner {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  #banner .banner-content-counter {
+    margin-left: 0;
+  }
+
+  #banner .banner-button {
+    font-size: 18px;
+  }
+
+  #banner .banner-image .banner-image-text {
+    font-size: 100px;
+  }
+
+  #banner .banner-image {
+    margin: 75px 0;
+  }
+  .counter + h5 {
+    font-size: 12px !important;
+  }
+}
+@media (max-width: 575px) {
+}
