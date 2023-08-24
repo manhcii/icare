@@ -279,7 +279,7 @@ body:not(.dark) .swiper-scrollbar-drag { opacity: .2; }
 
 .mode-switcher .pts-text {
 	font-size: 14px;
-	margin-bottom: 4px; 
+	margin-bottom: 4px;
 	text-transform: uppercase;
 	font-weight: 600;
 }
@@ -290,7 +290,7 @@ body:not(.dark) .swiper-scrollbar-drag { opacity: .2; }
 .mode-switcher .pts-text span.tdark,
 .mode-switcher.pts-switch-active .pts-text span.tlight { display: inline-block; }
 
-body:not(.dark) #footer { background-color: #FFF; }
+body:not(.dark) #footer { background-color: #FFF; margin-top: 50px;}
 
 .dark .owl-carousel .owl-dots .owl-dot,
 body:not(.dark) #copyrights { background-color: var(--light, #EEE); }

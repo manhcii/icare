@@ -45,12 +45,12 @@
       background-color: unset;
       border-color: #fff;
   }
-  .fbox-icon i {
+  /* .fbox-icon i {
     background-color: #0e4388 !important;
-  }
-  .section-clients, .section, .bg-mint{
+  } */
+  /* .section-clients, .section, .bg-mint{
     background-color: #f7fdfb !important;
-  }
+  } */
   #footer {
     border-top: 0px;
   }

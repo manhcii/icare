@@ -14,11 +14,8 @@
         return $item->parent_id == $block->id;
     });
   ?>
-  <!-- START PROCESS -->
-  <section id="content">
-    <div class="content-wrap py-0">
-      <!-- START BANNER -->
-      <div id="about-us-banner" class="section bg-transparent">
+  <div id="content">
+    <div id="about-us-banner" class="section bg-transparent">
         <div class="container">
           <h1 class="banner-title"><?php echo e($title); ?></h1>
           <p class="banner-desc">
@@ -27,8 +24,6 @@
           </p>
         </div>
       </div>
-      <!-- END BANNER -->
-    </div>
-  </section>
+  </div>
 <?php endif; ?>
 <?php /**PATH C:\xamppp\htdocs\icare\resources\views/frontend/blocks/about/styles/default.blade.php ENDPATH**/ ?>

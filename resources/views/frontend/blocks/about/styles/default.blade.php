@@ -14,11 +14,8 @@
         return $item->parent_id == $block->id;
     });
   @endphp
-  <!-- START PROCESS -->
-  <section id="content">
-    <div class="content-wrap py-0">
-      <!-- START BANNER -->
-      <div id="about-us-banner" class="section bg-transparent">
+  <div id="content">
+    <div id="about-us-banner" class="section bg-transparent">
         <div class="container">
           <h1 class="banner-title">{{ $title }}</h1>
           <p class="banner-desc">
@@ -26,7 +23,5 @@
           </p>
         </div>
       </div>
-      <!-- END BANNER -->
-    </div>
-  </section>
+  </div>
 @endif

@@ -14,8 +14,8 @@
         return $item->parent_id == $block->id;
     });
   @endphp
-
-      <!-- START WHY CHOOSE US -->
+    <div id="content">
+          <!-- START WHY CHOOSE US -->
       <div id="about-us-why-choose-us" class="section bg-transparent">
         <div class="container text-center">
           <div class="heading-block center">
@@ -49,4 +49,6 @@
         </div>
       </div>
   <!-- END PROCESS -->
+    </div>
+
 @endif
