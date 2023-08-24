@@ -1,0 +1,57 @@
+/* START BANNER */
+#about-us-banner {
+}
+#about-us-banner .banner-title {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+#about-us-banner .banner-desc {
+  width: 50%;
+}
+
+/* END BANNER */
+
+/* START OUR STORY */
+#our-story .our-story-image {
+  width: 100%;
+}
+
+#our-story .our-story-image img {
+  width: 100%;
+}
+
+#our-story .our-story-content {
+  padding-top: 50px;
+  padding-left: 50px;
+}
+
+#our-story .our-story-content .title {
+  margin-bottom: 20px;
+}
+
+#our-story .our-story-content-number {
+  gap: 30px;
+}
+
+#our-story .our-story-content-number .item .text {
+  line-height: 1.5;
+}
+
+/* END OUR STORY */
+
+/* START WHY CHOOSE US */
+#about-us-why-choose-us .feature-box {
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+#about-us-why-choose-us .feature-box * {
+  text-align: center;
+}
+/* END WHY CHOOSE US */
+
+/* START CLIENT */
+
+/* END CLIENT */

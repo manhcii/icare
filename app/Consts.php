@@ -136,6 +136,7 @@ class Consts
             ],
             "show_route" => true
         ],
+
         [
             "title" => "Chi tiết",
             "name" => "frontend.cms.detail",
@@ -143,6 +144,16 @@ class Consts
                 [
                     "title" => "Mặc định",
                     "name" => "post.detail"
+                ]
+            ]
+        ],
+        [
+            "title" => "Về chúng tôi",
+            "name" => "frontend.about",
+            "template" => [
+                [
+                    "title" => "Mặc định",
+                    "name" => "custom.index"
                 ]
             ]
         ],
@@ -189,6 +200,7 @@ class Consts
             ],
             "show_route" => true
         ],
+
         [
             "title" => "Trang tùy chọn",
             "name" => "frontend.page",

@@ -108,4 +108,10 @@ class ContactController extends Controller
 
         return $this->responseView('frontend.pages.branch.index');
     }
+    public function intro()
+    {
+        return $this->responseView('frontend.pages.custom.index');
+    }
+
+
 }

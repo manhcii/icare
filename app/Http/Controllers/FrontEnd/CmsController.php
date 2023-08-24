@@ -19,7 +19,7 @@ class CmsController extends Controller
      *  */
     public function postCategory($alias = null, Request $request)
     {
-        
+
         $params_page['alias'] = $alias;
         $page = ContentService::getPage($params_page)->first();
 
@@ -48,7 +48,7 @@ class CmsController extends Controller
                 $paramPost['status'] = Consts::POST_STATUS['active'];
                 $paramPost['is_type'] = $taxonomy->taxonomy;
                 $this->responseData['posts'] = ContentService::getCmsPost($paramPost)->paginate(Consts::PAGINATE[$taxonomy->taxonomy]);
-                
+
                 return $this->responseView('frontend.pages.' . $taxonomy->taxonomy . '.category');
             } else {
                 return redirect()->back()->with('errorMessage', __('not_found'));
@@ -64,10 +64,11 @@ class CmsController extends Controller
             $params['alias'] = $alias;
             $params['status'] = Consts::POST_STATUS['active'];
             $detail = ContentService::getCmsPost($params)->first();
-       
-            $review = Review::where('status', "!=",'delete')->where('id_product',$detail->id)->orderBy("created_at","desc")->get();
-          
+
+
             if ($detail) {
+                $review = Review::where('status', "!=",'delete')->where('id_product',$detail->id)->orderBy("created_at","desc")->get();
+
                 $detail->count_visited = $detail->count_visited + 1;
                 $detail->save();
                 $this->responseData['detail'] = $detail;

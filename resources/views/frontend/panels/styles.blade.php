@@ -17,6 +17,8 @@
   <link rel="stylesheet" href="{{ asset('themes/frontend/watches/css/magnific-popup.css') }}" type="text/css" />
   <link rel="stylesheet" href="{{ asset('themes/frontend/watches/css/custom.css') }}" type="text/css" />
   <link rel="stylesheet" href="{{ asset('themes/frontend/watches/FHMtemp-agency.css') }}" />
+  <link rel="stylesheet" href="{{ asset('themes/frontend/watches/css/solution.css') }}" type="text/css" />
+  <link rel="stylesheet" href="{{ asset('themes/frontend/watches/css/about-us.css') }}" type="text/css" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -50,7 +52,7 @@
     background-color: #f7fdfb !important;
   }
   #footer {
-    border-top: 0px; 
+    border-top: 0px;
   }
   .bg-icon{
     background-color: #53c3bd !important;

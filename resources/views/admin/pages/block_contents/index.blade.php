@@ -171,7 +171,7 @@
                       </td>
                     </tr>
                   </form>
-                  {{-- @foreach ($rows as $sub)
+                  @foreach ($rows as $sub)
                     @if ($sub->parent_id == $row->id)
                       <form action="{{ route(Request::segment(2) . '.destroy', $sub->id) }}" method="POST"
                         onsubmit="return confirm('@lang('Confirm action')')">
@@ -245,7 +245,7 @@
                         @endif
                       @endforeach
                     @endif
-                  @endforeach --}}
+                  @endforeach
                 @endif
               @endforeach
             </tbody>

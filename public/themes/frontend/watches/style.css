@@ -13322,6 +13322,66 @@ label.radio {
   -webkit-animation-delay: -0.16s;
   animation-delay: -0.16s;
 }
+#why-choose-us .heading-block h2 {
+    font-size: 40px;
+  }
+
+  #why-choose-us .heading-block::after {
+    content: unset;
+  }
+
+  #why-choose-us .why-choose-us-image {
+    height: 100%;
+    width: 100%;
+  }
+
+  #why-choose-us .why-choose-us-image img {
+    width: 100%;
+  }
+
+  #why-choose-us .why-choose-us-content {
+    padding-left: 50px;
+  }
+
+  #why-choose-us .why-choose-us-content-bottom {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #000;
+  }
+
+  #why-choose-us .why-choose-us-content-bottom h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+
+  #why-choose-us .why-choose-us-content-bottom ul li {
+    margin-bottom: 5px;
+  }
+
+  @media (max-width: 991px) {
+    .about-content-title {
+      font-size: 20px;
+      margin-top: -2px;
+    }
+
+    #why-choose-us {
+      margin-top: 0;
+      padding-top: 0;
+    }
+
+    #why-choose-us .why-choose-us-image {
+      margin-bottom: 200px;
+    }
+
+    #why-choose-us .why-choose-us-content {
+      padding-left: 0;
+    }
+
+    #why-choose-us .heading-block h2 {
+      font-size: 26px;
+    }
+  }
+
 @-webkit-keyframes bouncedelay {
   0%,
   100%,
