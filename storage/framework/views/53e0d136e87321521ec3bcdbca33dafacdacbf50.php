@@ -1,4 +1,3 @@
-
 <?php $__env->startSection('title'); ?>
     <?php echo e($module_name); ?>
 
@@ -240,27 +239,16 @@
                                             <?php echo app('translator')->get('Selected Blocks'); ?>
                                         </h4>
                                         <div class="dd checkbox_list" id="nastb_selected">
-                                            <?php
-                                                $selected = 0;
-                                            ?>
-                                            <ol class=" dd-list" id="block_selected">
-                                                <?php $__currentLoopData = $block_selected; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $item): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                                                    <?php
-                                                        $selected++;
-                                                    ?>
-                                                    <li class="dd-item" data-id="<?php echo e($item->id); ?>">
-                                                        
-                                                        <div class="dd-handle">
-
-                                                            <strong><?php echo e(__($item->title) . ' (' . $item->block_name . ')'); ?></strong>
-                                                        </div>
-                                                    </li>
-                                                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-                                                <li class="dd-placeholder hidden">
-                                                </li>
-                                            </ol>
-                                            <?php if($selected == 0): ?>
-                                                <div class="dd-empty"></div>
+                                            <?php if(count($block_selected) > 0): ?>
+                                                <ol class=" dd-list">
+                                                    <?php $__currentLoopData = $block_selected; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $item): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                                                        <li class="dd-item" data-id="<?php echo e($item->id); ?>">
+                                                            <div class="dd-handle">
+                                                                <strong><?php echo e(__($item->title) . ' (' . $item->block_name . ')'); ?></strong>
+                                                            </div>
+                                                        </li>
+                                                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                                                </ol>
                                             <?php endif; ?>
                                         </div>
 
@@ -270,31 +258,19 @@
                                             <?php echo app('translator')->get('Available Blocks'); ?>
                                         </h4>
                                         <div class="dd checkbox_list" id="nastb_available">
-                                            <?php
-                                                $available = 0;
-                                            ?>
-                                            <ol class=" dd-list" id="block_available">
 
-                                                <?php $__currentLoopData = $blockContents; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $item): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                                                    <?php if(!in_array($item->id, $detail->json_params->block_content ?? [])): ?>
-                                                        <?php
-                                                            $available++;
-                                                        ?>
-                                                        <li class="dd-item" data-id="<?php echo e($item->id); ?>">
-                                                            
-                                                            <div class="dd-handle ">
-                                                                <strong><?php echo e(__($item->title) . ' (' . $item->block_name . ')'); ?></strong>
-                                                            </div>
-                                                        </li>
-                                                    <?php else: ?>
-                                                    <?php endif; ?>
-                                                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-                                                <li class="dd-placeholder hidden">
-
-                                                </li>
-                                            </ol>
-                                            <?php if($available == 0): ?>
-                                                <div class="dd-empty"></div>
+                                            <?php if(count($blockContents) > 0): ?>
+                                                <ol class=" dd-list">
+                                                    <?php $__currentLoopData = $blockContents; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $item): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                                                        <?php if(!in_array($item->id, $detail->json_params->block_content ?? [])): ?>
+                                                            <li class="dd-item" data-id="<?php echo e($item->id); ?>">
+                                                                <div class="dd-handle ">
+                                                                    <strong><?php echo e(__($item->title) . ' (' . $item->block_name . ')'); ?></strong>
+                                                                </div>
+                                                            </li>
+                                                        <?php endif; ?>
+                                                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                                                </ol>
                                             <?php endif; ?>
                                         </div>
 

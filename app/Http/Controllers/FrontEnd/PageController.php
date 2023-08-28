@@ -20,4 +20,8 @@ class PageController extends Controller
     {
         return $this->responseView('frontend.pages.custom.index');
     }
+    public function Solution(Request $request)
+    {
+        return $this->responseView('frontend.pages.custom.solution');
+    }
 }

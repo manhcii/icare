@@ -14,7 +14,6 @@
         return $item->parent_id == $block->id;
     });
   @endphp
-    <div id="content">
         <div id="our-story" class="section">
             <div class="container">
               <div class="row">
@@ -51,5 +50,5 @@
             </div>
           </div>
 
-    </div>
+
 @endif

@@ -8,7 +8,7 @@
     $url_link = $block->url_link != '' ? $block->url_link : '';
     $url_link_title = $block->json_params->url_link_title->{$locale} ?? $block->url_link_title;
     $style = isset($block->json_params->style) && $block->json_params->style == 'slider-caption-right' ? 'd-none' : '';
-    
+
     // Filter all blocks by parent_id
     $block_childs = $blocks->filter(function ($item, $key) use ($block) {
         return $item->parent_id == $block->id;
@@ -152,4 +152,4 @@
       </div>
     </div>
   </div>
-@endif  
+@endif

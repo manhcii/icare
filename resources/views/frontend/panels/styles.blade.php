@@ -57,6 +57,16 @@
   .bg-icon{
     background-color: #53c3bd !important;
   }
+  .our-story-content p {
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 1.8;
+}
+div#about-us-why-choose-us p {
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 1.8;
+}
 </style>
 @isset($web_information->source_code->header)
   {!! $web_information->source_code->header !!}

@@ -147,16 +147,7 @@ class Consts
                 ]
             ]
         ],
-        [
-            "title" => "Về chúng tôi",
-            "name" => "frontend.about",
-            "template" => [
-                [
-                    "title" => "Mặc định",
-                    "name" => "custom.index"
-                ]
-            ]
-        ],
+       
         [
             "title" => "Danh mục",
             "name" => "frontend.cms.taxonomy",

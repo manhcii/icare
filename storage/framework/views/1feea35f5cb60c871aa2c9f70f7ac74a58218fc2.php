@@ -14,7 +14,6 @@
         return $item->parent_id == $block->id;
     });
   ?>
-    <div id="content">
         <div id="our-story" class="section">
             <div class="container">
               <div class="row">
@@ -52,6 +51,6 @@
             </div>
           </div>
 
-    </div>
+
 <?php endif; ?>
 <?php /**PATH C:\xamppp\htdocs\icare\resources\views/frontend/blocks/cauchuyen/styles/default.blade.php ENDPATH**/ ?>
