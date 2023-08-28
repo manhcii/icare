@@ -55,7 +55,7 @@
     border-top: 0px;
   }
   .bg-icon{
-    background-color: #53c3bd !important;
+    background-color: #0e4388!important;
   }
   .our-story-content p {
     margin-bottom: 0;

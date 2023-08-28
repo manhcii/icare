@@ -60,7 +60,7 @@
                 src="{{ $image }}"
                 class="fast fadeInDown animated"
                 alt="Image"
-                style="height: 600px"
+                style="height: 600px; border-radius:20px"
                 data-animate="fadeInDown"
               />
             </div>

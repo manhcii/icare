@@ -7,7 +7,7 @@
     $background = $block->image_background != '' ? $block->image_background : null;
     $url_link = $block->url_link != '' ? $block->url_link : '';
     $url_link_title = $block->json_params->url_link_title->{$locale} ?? $block->url_link_title;
-    
+
   @endphp
     <div class="form-widget">
       <div class="form-result"></div>
@@ -45,7 +45,7 @@
               <div class="row">
                 <div class="col-sm-7">
                   <label class="text-white" for="fitness-form-name">@lang('Email')<span class="text-red">*</span>:</label>
-                  <input type="text" name="email" class="form-control required" value="" placeholder="Enter your Email">
+                  <input type="text" name="email" class="form-control required" value="" placeholder="Nhập email của bạn">
                 </div><div class="col-sm-5">
                   <label class="text-white" for="fitness-form-name">@lang('Nhu cầu')<span class="text-red">*</span>:</label>
                   <select name="demain" id="demain" class="select2 form-select">
@@ -57,12 +57,12 @@
               </div>
             </div>
             <div class="col-12 form-group">
-                <label class="text-white" for="fitness-form-name">Message:</label>
+                <label class="text-white" for="fitness-form-name">@lang('Nội dung'):</label>
                 <textarea name="content" class="form-control required" rows="5" placeholder="@lang('Vấn đề cần tư vấn')"></textarea>
             </div>
             <input type="hidden" name="is_type" value="contact">
             <div class="col-12 d-flex justify-content-end align-items-center">
-              <button type="submit" name="fitness-form-submit" class="btn btn-default bg-white text-uppercase font-weight-bold ms-2">Confirm Booking</button>
+              <button type="submit" name="fitness-form-submit" class="btn btn-default bg-white text-uppercase font-weight-bold ms-2">@lang('Gửi')</button>
             </div>
           </form>
         </div>

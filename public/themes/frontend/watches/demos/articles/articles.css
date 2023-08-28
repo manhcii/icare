@@ -290,7 +290,7 @@ body:not(.dark) .swiper-scrollbar-drag { opacity: .2; }
 .mode-switcher .pts-text span.tdark,
 .mode-switcher.pts-switch-active .pts-text span.tlight { display: inline-block; }
 
-body:not(.dark) #footer { background-color: #FFF; margin-top: 50px;}
+body:not(.dark) #footer { background-color: #FFF; }
 
 .dark .owl-carousel .owl-dots .owl-dot,
 body:not(.dark) #copyrights { background-color: var(--light, #EEE); }

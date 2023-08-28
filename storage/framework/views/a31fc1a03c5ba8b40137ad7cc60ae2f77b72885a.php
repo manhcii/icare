@@ -64,7 +64,7 @@
                 src="<?php echo e($image); ?>"
                 class="fast fadeInDown animated"
                 alt="Image"
-                style="height: 600px"
+                style="height: 600px; border-radius:20px"
                 data-animate="fadeInDown"
               />
             </div>
@@ -77,4 +77,5 @@
         </div>
       </div>
     </div>
-<?php endif; ?>    <?php /**PATH C:\xamppp\htdocs\icare\resources\views/frontend/blocks/banner/styles/slide.blade.php ENDPATH**/ ?>
+<?php endif; ?>    
+<?php /**PATH C:\xamppp\htdocs\icare\resources\views/frontend/blocks/banner/styles/slide.blade.php ENDPATH**/ ?>
